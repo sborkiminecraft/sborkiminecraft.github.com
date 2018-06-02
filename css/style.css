@@ -1,0 +1,77 @@
+	body{
+    background: url(../images/1.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+	#panel { /* маленький квадрат */
+    position: fixed; /* положение */ 
+    top: 100px; /* отступ сверху */
+    left: 0; /* отступ слева */
+    background: rgba(34, 139, 34, 0.7); /* цвет фона */
+    width: 30px; /* ширина блока */
+    height: 40px; /* высота блока */
+    font: 14px Arial; /* размер и тип шрифта */
+    color: #fff; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    padding: 5px; /* отступы от границ внутри блока */
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+
+	/* СКРЫТЫЙ БЛОК */
+	#hidden_panel {
+    position: fixed; /* положение */
+    top: 100px; /* отступ сверху */
+    left: -220px; /* отступ слева */
+    background: rgba(34, 139, 34, 0.7); /* цвет фона */
+    color: brown	; /* цвет текста */
+    width: 200px; /* ширина блока */
+    height: 440px; /* высота блока */
+    padding: 10px; /* отступы от границ внутри блока */
+    text-align: left; /* выравнивание текста */
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 0 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+    }
+#panel:hover {
+    left: 220px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+#panel:hover #hidden_panel {
+    left: 0; /* отступ слева */
+	}
+
+	<div id="panel">
+    <div id="hidden_panel">
+       Содержание:<br>
+        <a href="https://vk.com">ВК</a>
+    </div>
+	</div>
+#block{
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+}
+.container{
+ width: 1250px;
+ height: 400px;
+ background-color: rgba(24, 33, 52, 0.7);
+ margin: 90px auto 0 auto;
+ text-align: all;
+ box-shadow: 0 -5px rgb(58, 219, 253);
+ border-radius: 0 0 10px 10px;
